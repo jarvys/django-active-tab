@@ -1,3 +1,5 @@
+import sys
+
 def active_tab(tab, sub_tab=None):
 	def outer_wrapper(func):
         @wraps(func)
@@ -10,3 +12,5 @@ def active_tab(tab, sub_tab=None):
         return wrapper
 
     return outer_wrapper
+
+sys.modules[__name__] = active_tab
