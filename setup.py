@@ -6,7 +6,7 @@ setup(
 	description='nav decorator for django views',
 	author='yangchen',
 	author_email='yuhan534@126.com',
-	url='https://github.com/jarvys.django-active-tab',
+	url='https://github.com/jarvys/django-active-tab',
 	install_requires=[
 		'Django'
 	],
