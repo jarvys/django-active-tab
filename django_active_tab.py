@@ -1,10 +1,7 @@
 import sys
 
 def active_tab(tab, sub_tab=None):
-	from functools import wraps
-	
 	def outer_wrapper(func):
-		@wraps(func)
 		def wrapper(request):
 			request.nav = request.nav if hasattr(request, "nav") else {}
 			request.nav["tab"] = tab
