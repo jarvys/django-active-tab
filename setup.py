@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
 	name='django-active-tab',
-	version='0.0.3',
+	version='0.0.4',
 	description='nav decorator for django views',
 	author='yangchen',
 	author_email='yuhan534@126.com',
