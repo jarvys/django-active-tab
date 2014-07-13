@@ -2,9 +2,9 @@ import sys
 
 def active_tab(tab, sub_tab=None):
 	def outer_wrapper(func):
-		import functools.wraps
-		
-		@functools.wraps
+		import functools
+
+		@functools.wraps(func)
 		def wrapper(request):
 			request.nav = request.nav if hasattr(request, "nav") else {}
 			request.nav["tab"] = tab
